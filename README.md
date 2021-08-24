@@ -1,2 +1,2 @@
 # oasis-clothing
-- deployed at [oasisclothing.netlify.app](oasisclothing.netlify.app)
+- deployed at [https://oasisclothing.netlify.app](https://oasisclothing.netlify.app)
