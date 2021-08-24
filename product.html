@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog | Oasis Clothing Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anay Gupta">
+    <meta name="description"
+        content="View the Oasis product catalog for men's and women's professional clothing. Shop at our Scottsdale location.">
+    <!-- link to normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- link to project specific stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link to fontawesome library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <script src='index.js'></script>
+</head>
+
+<body>
+    <header>
+        <section id="nav-logo">
+            <h3 class="hide-element">Oasis Website Navigation Logo</h3>
+            <a href="index.html"><img src="assets/logo1.png"
+                    alt="The Oasis Clothing logo is a line art depiction of two palm trees overlooking the water."></a>
+            <a href="index.html">Oasis Clothing Co.</a>
+        </section>
+        <nav>
+            <ul id="nav-container">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="underline" href="product.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="store-images">
+            <h2 class="hide-element">Oasis Clothing Store Images</h2>
+            <img id="store1" src="assets/store-1.png"
+                alt="The Oasis Clothing has an all-glass entrance inviting you into the main lobby inspired by a Arizona desert.">
+            <img id="store2" src="assets/store-2.png"
+                alt="The interior of the Oasis Clothing store's main lobby is calm yet bright with a skylight shining onto displays of colorful clothing.">
+            <img id="store3" src="assets/store-3.png"
+                alt="An Oasis Clothing store aisle is filled with colorful clothing on black racks with panels of art above each rack.">
+            <img id="store4" src="assets/store-4.png"
+                alt="An Oasis Clothing store aisle is filled with colorful jackets and sweaters on white racks.">
+        </section>
+        <section id="philosophy">
+            <h1>Oasis Philosophy</h1>
+            <h2>We believe that clothing is momentous</h2>
+            <p>
+                Ridiculously momentous to be generalized with basic brands and logos. Which is why every piece of
+                clothing on our shelves is sourced from local designers based right here in the Valley. Oasis is not
+                only the highest quality of clothing that will ever touch your skin but also the only clothing designed
+                with an amount of love unique to to the Arizona desert.
+            </p>
+            <p id="now">Your journey to the Oasis starts right here, right now. Start browsing our Product catalog
+                now.</p>
+        </section>
+
+        <aside id="availability">
+            <h4>VISIT STORE FOR AVAILABILITY</h4>
+        </aside>
+
+        <section id="general-catalog">
+            <h2>Product Catalog</h2>
+            <button class="men-button"
+                onclick="goTo('product.html#general-catalog', 'general-catalog', 'mens-catalog')">General</button>
+            <button class="men-button"
+                onclick="goTo('product.html#mens-catalog', 'mens-catalog', 'general-catalog')">Men's</button>
+            <button class="women-button"
+                onclick="goTo('product.html#womens-catalog', 'womens-catalog', 'general-catalog')">Women's</button>
+
+            <!-- the two other views (full men's and women's clothing) will be triggered on respective button click and all other products will be loaded from javascript -->
+            <!-- General View (loads when first landing on Product page) -->
+            <section class="product-image">
+                <img class="one" src="assets/dressshirt1.jpg"
+                    alt="A man leans against the wall in the Oasis white dress shirt with Oasis polka-dotted bowtie">
+                <img class="two" src="assets/dressshirt2.jpg"
+                    alt="A man flings his Oasis coat over his shoulder while wearing the Oasis light pink dress shirt with an Oasis patterned tie.">
+                <img class="three" src="assets/dressshirt3.jpg"
+                    alt="A man sits dressed in a striped green Oasis dress shirt and black Oasis slacks.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Dress Shirt</h3>
+                    </li>
+                    <li class="product-desc">
+                        Lift your professional image with a smart wing collar dress shirt that provides the ideal
+                        canvas to add the right black tie. Available in multiple colors. Visit store for
+                        availability.
+                    </li>
+                    <li class="price">$75.00</li>
+                    <li class="source">Sourced from Thread.</li>
+                </ul>
+            </section>
+
+
+            <section class="product-image">
+                <img class="one" src="assets/bowtie1.jpg" alt="A soft blue Oasis men's bow-tie rests in its packaging.">
+                <img class="two" src="assets/bowtie2.jpg"
+                    alt="A black Oasis men's bow-tie is tied around a man for a wedding occasion.">
+                <img class="three" src="assets/bowtie3.jpg"
+                    alt="A creamish Oasis men's bow-tie is worn by a man heading to a special occasion.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Bow-Tie</h3>
+                    </li>
+                    <li class="product-desc">
+                        Upgrade your tux with this simple but sophisticated bow-tie that raises
+                        the bar for suave appeal
+                        with
+                        its classic shape. A personal favorite of our very own/co-founder, Mikhail Varshavski/Doctor
+                        Mike,
+                        this
+                        bow-tie pairs well with Oasis Men’s Dress shirts and even select Oasis Men’s Plaid shirts.
+                        Available
+                        in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$40.00</li>
+                    <li class="source">Sourced from Phantom Avenue.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/shirt1.jpg"
+                    alt="A man smiles into the distance while wearing a green-white Oasis men's plaid shirt.">
+                <img class="two" src="assets/shirt2.jpg"
+                    alt="In an age of coronavirus, a masked man looks at the sunset while wearing a blue-white Oasis men's plaid shirt.">
+                <img class="three" src="assets/shirt3.jpg"
+                    alt="A man wearing a black-white Oasis men's plaid shirt stands near a forest-wall backdrop.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Plaid Shirt</h3>
+                    </li>
+                    <li class="product-desc">
+                        Crafted with light-weight cotton oxford, this regular-fit plaid shirt is
+                        a
+                        versatile top for any
+                        event. Available in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$50.00</li>
+                    <li class="source">Sourced from Thread.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/blouse1.jpg"
+                    alt="A woman dressed in a dotted tan version of the Oasis women's blouse sways to the music while sitting.">
+                <img class="two" src="assets/blouse2.jpg"
+                    alt="A woman dressed in a polka-dotted Oasis women's blouse and Oasis slacks looks into the distance.">
+                <img class="three" src="assets/blouse3.jpg"
+                    alt="A woman dressed in a flamingo pink Oasis women's blouse smiles into the distance.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Blouse</h3>
+                    </li>
+                    <li class="product-desc">
+                        This blouse is comfortable and roomy and can be worn alone or layered
+                        over
+                        another piece. Available
+                        in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$60.00</li>
+                    <li class="source">Sourced from Local Nomad.</li>
+                </ul>
+
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/slacks1.jpg"
+                    alt="A woman walks past the London train station in a pair of striped gray Oasis women's slacks.">
+                <img class="two" src="assets/slacks2.jpg"
+                    alt="A woman dressed in striped gray Oasis women's slacks admires the lake.">
+                <img class="three" src="assets/slacks3.jpg"
+                    alt="A woman leans against the railing while wearing striped gray Oasis women's slacks.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Slacks</h3>
+                    </li>
+                    <li class="product-desc">
+                        Take your professional outfit to the next level with a pair of stylish
+                        yet
+                        comfortable slacks.
+                        Available in multiple colors. Visit store for
+                        availability.
+                    </li>
+                    <li class="price">$70.00</li>
+                    <li class="source">Sourced from Phantom Avenue.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/sundress1.jpg"
+                    alt="A striped navy blue Oasis women's sundress hangs from a hanger.">
+                <img class="two" src="assets/sundress2.jpg"
+                    alt="A woman is smiling while wearing a bright white Oasis women's sundress and an Oasis fedora hat.">
+                <img class="three" src="assets/sundress3.jpg"
+                    alt="A woman stands in the shade while wearing the breezy Oasis sundress in grayish-blue.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Sundress</h3>
+                    </li>
+                    <li class="product-desc">
+                        A soft and lightweight linen fabric meets a modern and stylish jumpsuit.
+                        Available in multiple colors. Visit store for
+                        availability.
+
+                    </li>
+                    <li class="price">$80.00</li>
+                    <li class="source">Sourced from Vida Moulin.</li>
+                </ul>
+            </section>
+            <button class="top-button" onclick="goToTop('product.html#general-catalog')">
+                Go to Top
+            </button>
+        </section>
+
+        <section id="mens-catalog">
+            <h2>Men's Catalog</h2>
+            <button class="men-button"
+                onclick="goTo('product.html#general-catalog', 'general-catalog', 'mens-catalog')">General</button>
+            <button class="men-button"
+                onclick="goTo('product.html#mens-catalog', 'mens-catalog','womens-catalog')">Men's</button>
+            <button class="women-button"
+                onclick="goTo('product.html#womens-catalog', 'womens-catalog', 'mens-catalog')">Women's</button>
+
+            <!-- Men's View (when Men's Button is clicked) -->
+            <section class="product-image">
+                <img class="one" src="assets/tshirt-1.png"
+                    alt="A man looks into the distance while wearing a dark green Oasis men's T-shirt.">
+                <img class="two" src="assets/tshirt-2.png"
+                    alt="A man wearing a blue striped Oasis men's T-shirt walks through a small town.">
+                <img class="three" src="assets/tshirt-3.png"
+                    alt="Multiple colored Oasis men's T-shirts rest on a wooden surface.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's T-shirt</h3>
+                    </li>
+                    <li class="product-desc">
+                        Oasis T-shirts are crafted from plush, elastic cotton, resulting in a breathable fit and a
+                        loungewear essential. Available in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$25.00</li>
+                    <li class="source">Sourced from Thread.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/chino-1.png"
+                    alt="A man wearing gray Oasis men's chino pants sits on the slope of a hill and looks into the distance.">
+                <img class="two" src="assets/chino-2.png"
+                    alt="A man walks across a light brown tile floor in dark blue Oasis men's chino pants.">
+                <img class="three" src="assets/chino-3.png"
+                    alt="A man stands on a white floor in a pair of black Oasis men's chino pants.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Chino Pants</h3>
+                    </li>
+                    <li class="product-desc">
+                        Oasis Chino Pants allow enough pocket room for the essentials while cherishing a slim-fit and
+                        stylish look. Available in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$60.00</li>
+                    <li class="source">Sourced from Thread.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/jeans-1.png"
+                    alt="A man leans against the railing in gray Oasis men's slim denim jeans.">
+                <img class="two" src="assets/jeans-2.png"
+                    alt="A man wearing a briefcase and holding a book stands in traditional blue denim Oasis jeans.">
+                <img class="three" src="assets/jeans-3.png"
+                    alt="A man smiles into the distance while wearing cuffed and faded light blue Oasis jeans.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Slim Denim Jeans</h3>
+                    </li>
+                    <li class="product-desc">
+                        Oasis Jeans provide the traditionally stylish slim/skinny denim look without sacrificing any
+                        comfort. Available in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$60.00</li>
+                    <li class="source">Sourced from Phantom Avenue.</li>
+                </ul>
+            </section>
+
+
+            <section class="product-image">
+                <img class="one" src="assets/dressshirt1.jpg"
+                    alt="A man leans against the wall in the Oasis white dress shirt with Oasis polka-dotted bowtie">
+                <img class="two" src="assets/dressshirt2.jpg"
+                    alt="A man flings his Oasis coat over his shoulder while wearing the Oasis light pink dress shirt with an Oasis patterned tie.">
+                <img class="three" src="assets/dressshirt3.jpg"
+                    alt="A man sits dressed in a striped green Oasis dress shirt and black Oasis slacks.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Dress Shirt</h3>
+                    </li>
+                    <li class="product-desc">
+                        Lift your professional image with a smart wing collar dress shirt that provides the ideal
+                        canvas to add the right black tie. Available in multiple colors. Visit store for
+                        availability.
+                    </li>
+                    <li class="price">$75.00</li>
+                    <li class="source">Sourced from Thread.</li>
+                </ul>
+            </section>
+
+
+            <section class="product-image">
+                <img class="one" src="assets/bowtie1.jpg" alt="A soft blue Oasis men's bow-tie rests in its packaging.">
+                <img class="two" src="assets/bowtie2.jpg"
+                    alt="A black Oasis men's bow-tie is tied around a man for a wedding occasion.">
+                <img class="three" src="assets/bowtie3.jpg"
+                    alt="A creamish Oasis men's bow-tie is worn by a man heading to a special occasion.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Bow-Tie</h3>
+                    </li>
+                    <li class="product-desc">
+                        Upgrade your tux with this simple but sophisticated bow-tie that raises
+                        the bar for suave appeal
+                        with
+                        its classic shape. A personal favorite of our very own/co-founder, Mikhail Varshavski/Doctor
+                        Mike,
+                        this
+                        bow-tie pairs well with Oasis Men’s Dress shirts and even select Oasis Men’s Plaid shirts.
+                        Available
+                        in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$40.00</li>
+                    <li class="source">Sourced from Phantom Avenue.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/shirt1.jpg"
+                    alt="A man smiles into the distance while wearing a green-white Oasis men's plaid shirt.">
+                <img class="two" src="assets/shirt2.jpg"
+                    alt="In an age of coronavirus, a masked man looks at the sunset while wearing a blue-white Oasis men's plaid shirt.">
+                <img class="three" src="assets/shirt3.jpg"
+                    alt="A man wearing a black-white Oasis men's plaid shirt stands near a forest-wall backdrop.">
+                <ul class="four">
+                    <li>
+                        <h3>Men's Plaid Shirt</h3>
+                    </li>
+                    <li class="product-desc">
+                        Crafted with light-weight cotton oxford, this regular-fit plaid shirt is
+                        a
+                        versatile top for any
+                        event. Available in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$50.00</li>
+                    <li class="source">Sourced from Thread.</li>
+                </ul>
+            </section>
+
+
+
+            <!-- the two remaining views (for full men's and women's clothing) will be triggered on button click and all products will be loaded from javascript -->
+            <!-- Men's View (when Men's Button is clicked) -->
+            <!-- Women's View (when Women's Button is clicked) -->
+            <button class="top-button" onclick="goToTop('product.html#mens-catalog')">
+                Go to Top
+            </button>
+        </section>
+
+        <section id="womens-catalog">
+            <h2>Women's Catalog</h2>
+            <button class="men-button"
+                onclick="goTo('product.html#general-catalog', 'general-catalog', 'womens-catalog')">General</button>
+            <button class="men-button"
+                onclick="goTo('product.html#mens-catalog', 'mens-catalog', 'womens-catalog')">Men's</button>
+            <button class="women-button"
+                onclick="goTo('product.html#womens-catalog', 'womens-catalog', 'mens-catalog')">Women's</button>
+
+            <!-- Women's View (when Women's Button is clicked) -->
+            <section class="product-image">
+                <img class="one" src="assets/shoes-1.png"
+                    alt="A woman sits on the edge of a wall wearing a pair of rose-colored Oasis sneakers.">
+                <img class="two" src="assets/shoes-2.png"
+                    alt="A coloful pair of Oasis womens sneakers sits against a white block.">
+                <img class="three" src="assets/shoes-3.png"
+                    alt="A teal-colored Oasis sneaker sits on top of slices of peaches.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Sneakers</h3>
+                    </li>
+                    <li class="product-desc">
+                        The Oasis sneaker is trendy and chic, shaped by smooth suede and classic lace-up sneakers.
+                        Available in multiple colors. Visit store for
+                        availability.
+
+                    </li>
+                    <li class="price">$130.00</li>
+                    <li class="source">Sourced from Vida Moulin.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/cardigan-1.png"
+                    alt="A woman hides her face in her hair while wearing a tan-colored Oasis cardigan in the woods.">
+                <img class="two" src="assets/cardigan-2.png"
+                    alt="A woman drinks a cup of coffee in her brown, waterfall-styled Oasis womens cardigan.">
+                <img class="three" src="assets/cardigan-3.png"
+                    alt="A woman clutches her hair while wearing a long white Oasis cardigan.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Cardigan</h3>
+                    </li>
+                    <li class="product-desc">
+                        This tight-knit cardigan is one of our most popular oversized cardigans. It is perfect as a
+                        staple in any woman’s wardrobe with its oversized pockets and waterfall lapels. Available in
+                        multiple colors. Visit store for
+                        availability.
+
+                    </li>
+                    <li class="price">$90.00</li>
+                    <li class="source">Sourced from Vida Moulin.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/heels-1.png"
+                    alt="A women leans back in her hair with her shiny black Oasis heels on.">
+                <img class="two" src="assets/heels-2.png"
+                    alt="A pair of light brown Oasis heels rest on a wooden floor, illuminated by sunlight.">
+                <img class="three" src="assets/heels-3.png"
+                    alt="A woman sits beachside and dangles her feet while wearing a pair matte black Oasis heels.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Heels</h3>
+                    </li>
+                    <li class="product-desc">
+                        Everyone needs a pair of versatile heels in their closet. With a comfortably-sized heel and
+                        a matte finish, a pair of Oasis heels are perfect for your typical workday or your night out.
+                        Available in multiple colors. Visit store for
+                        availability.
+
+                    </li>
+                    <li class="price">$130.00</li>
+                    <li class="source">Sourced from Vida Moulin.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/blouse1.jpg"
+                    alt="A woman dressed in a dotted tan version of the Oasis women's blouse sways to the music while sitting.">
+                <img class="two" src="assets/blouse2.jpg"
+                    alt="A woman dressed in a polka-dotted Oasis women's blouse and Oasis slacks looks into the distance.">
+                <img class="three" src="assets/blouse3.jpg"
+                    alt="A woman dressed in a flamingo pink Oasis women's blouse smiles into the distance.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Blouse</h3>
+                    </li>
+                    <li class="product-desc">
+                        This blouse is comfortable and roomy and can be worn alone or layered
+                        over
+                        another piece. Available
+                        in multiple colors. Visit store for availability.
+                    </li>
+                    <li class="price">$60.00</li>
+                    <li class="source">Sourced from Local Nomad.</li>
+                </ul>
+
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/slacks1.jpg"
+                    alt="A woman walks past the London train station in a pair of striped gray Oasis women's slacks.">
+                <img class="two" src="assets/slacks2.jpg"
+                    alt="A woman dressed in striped gray Oasis women's slacks admires the lake.">
+                <img class="three" src="assets/slacks3.jpg"
+                    alt="A woman leans against the railing while wearing striped gray Oasis women's slacks.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Slacks</h3>
+                    </li>
+                    <li class="product-desc">
+                        Take your professional outfit to the next level with a pair of stylish
+                        yet
+                        comfortable slacks.
+                        Available in multiple colors. Visit store for
+                        availability.
+                    </li>
+                    <li class="price">$70.00</li>
+                    <li class="source">Sourced from Phantom Avenue.</li>
+                </ul>
+            </section>
+
+            <section class="product-image">
+                <img class="one" src="assets/sundress1.jpg"
+                    alt="A striped navy blue Oasis women's sundress hangs from a hanger.">
+                <img class="two" src="assets/sundress2.jpg"
+                    alt="A woman is smiling while wearing a bright white Oasis women's sundress and an Oasis fedora hat.">
+                <img class="three" src="assets/sundress3.jpg"
+                    alt="A woman stands in the shade while wearing the breezy Oasis sundress in grayish-blue.">
+                <ul class="four">
+                    <li>
+                        <h3>Women's Sundress</h3>
+                    </li>
+                    <li class="product-desc">
+                        A soft and lightweight linen fabric meets a modern and stylish jumpsuit.
+                        Available in multiple colors. Visit store for
+                        availability.
+
+                    </li>
+                    <li class="price">$80.00</li>
+                    <li class="source">Sourced from Vida Moulin.</li>
+                </ul>
+            </section>
+
+            <!-- the two remaining views (for full men's and women's clothing) will be triggered on button click and all products will be loaded from javascript -->
+            <!-- Men's View (when Men's Button is clicked) -->
+            <!-- Women's View (when Women's Button is clicked) -->
+            <button class="top-button" onclick="goTo('product.html#womens-catalog')">
+                Go to Top
+            </button>
+        </section>
+    </main>
+    <footer>
+        <address id="socials">
+            <a href="https://www.facebook.com" aria-label="Oasis on Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" aria-label="Oasis on Instagram">
+                <i aria-hidden="true" class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" aria-label="Oasis on Twitter">
+                <i aria-hidden="true" class="fab fa-twitter"></i>
+            </a>
+        </address>
+
+        <!-- second nav -->
+        <section id="second-nav-mobile">
+            <h3 class="hide-element">Second Navigation Menu for mobile devices</h3>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html#location">VISIT US</a></li>
+                <li> <a href="mailto:hello@oasisclothing.com">CONTACT US</a></li>
+            </ul>
+        </section>
+
+        <section id="second-nav-tablet">
+            <h3 class="hide-element">Second Navigation Menu for tablet and desktop devices</h3>
+            <ul id="nav-elements">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="about.html#location">VISIT US</a></li>
+                <li> <a href="mailto:hello@oasisclothing.com">CONTACT US</a></li>
+            </ul>
+        </section>
+
+        <article id="disclaimer">
+            <h4>Created by Anay Gupta.</h4>
+            <p>This site is for educational purposes only.</p>
+        </article>
+
+    </footer>
+</body>
+
+</html>

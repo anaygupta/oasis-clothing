@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Oasis Clothing Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anay Gupta">
+    <meta name="description"
+        content="Shop men's and women's professional clothing locally sourced from around the Sonoran Desert. Find your favorite shirts, pants, shoes, and more. ">
+
+    <!-- link to normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- link to project specific stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link to fontawesome library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- picturefill polyfill added for old browsers not supporting srcset and picture-->
+    <!-- source: http://scottjehl.github.io/picturefill/ -->
+    <script>
+        // Picture element HTML5 shiv
+        // if picture tags are encountered in html code
+        document.createElement("picture");
+    </script>
+    <script src="picturefill.js" async></script>
+</head>
+
+<body>
+    <header>
+        <section id="nav-logo">
+            <h3 class="hide-element">Oasis Website Navigation Logo</h3>
+            <a href="index.html"><img src="assets/logo1.png"
+                    alt="The Oasis Clothing logo is a line art depiction of two palm trees overlooking the water."></a>
+            <a href="index.html">Oasis Clothing Co.</a>
+        </section>
+        <nav>
+            <ul id="nav-container">
+                <li><a class="underline" href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside id="covid-19">
+            <h4>A Note about COVID-19:</h4>
+            <p>
+                Oasis Clothing is following CDC guidelines and requires all customers to wear a mask and follow
+                social distancing guidelines in the store.
+            </p>
+        </aside>
+
+        <section id="welcome">
+            <h1>Oasis Clothing</h1>
+            <img src="assets/logo2.png"
+                alt="The Oasis Clothing logo is a line art depiction of two palm trees overlooking the water.">
+            <h2>Redefining clothing for young professionals</h2>
+            <p>
+                Located in the <a href="about.html#location">heart of Scottsdale, AZ,</a>
+                Oasis exclusively offers high-quality men's and women's clothing
+                sourced from local designers while retaining a relaxed shopping experience.
+            </p>
+        </section>
+
+        <section id="overview">
+            <h3 class="hide-element">Overview Section</h3>
+            <section id="men">
+                <picture>
+                    <!-- <source media="(min-width: 1440px)" srcset="assets/men-0.png"> -->
+                    <source media="(min-width: 1024px)" srcset="assets/men-2.png">
+                    <!-- <source media="(min-width: 768px)" srcset="assets/men-1.png"> -->
+                    <source media="(min-width: 600px)" srcset="assets/men-1.png">
+                    <!-- <source media="(min-width: 425px)" srcset="assets/men-2.png"> -->
+                    <source media="(min-width: 320px)" srcset="assets/men-2.png">
+                    <img src="assets/men-2.png"
+                        alt="The mens section of the Oasis store displays two mannuequins dressed in a dark brown suit and a checkered grey suit.">
+                </picture>
+                <a href="product.html">
+                    <h3>MEN</h3>
+                </a>
+                <p>
+                    <span class='preface-tablet'>For men, Oasis offers everything</span>
+                    <span class='preface-mobile'>Everything</span>
+                    from dress shirts and bow ties to plaid shirts and chino pants.</p>
+            </section>
+
+            <section id="women">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="assets/women-2.png">
+                    <source media="(min-width: 600px)" srcset="assets/women-1.png">
+                    <source media="(min-width: 320px)" srcset="assets/women-2.png">
+                    <img src="assets/women-2.png"
+                        alt="The womens section of the Oasis store displays a rack of colorful sweaters and jackets, and a soft fedora hat">
+                </picture>
+                <a href="product.html">
+                    <h3>WOMEN</h3>
+                </a>
+                <p>
+                    <span class='preface-tablet'>For women, Oasis offers everything</span>
+                    <span class='preface-mobile'>Everything</span>
+                    from formal blouses and stylish slacks to sundresses and sneakers.</p>
+            </section>
+
+            <section id="coming-soon">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="assets/hats-2.png">
+                    <source media="(min-width: 600px)" srcset="assets/hats-1.png">
+                    <source media="(min-width: 320px)" srcset="assets/hats-2.png">
+                    <img src="assets/hats-2.png" alt="Hundreds of colorful fedora hats thrown on top of each other.">
+                </picture>
+                <h3>COMING SOON</h3>
+                <p>Over the next year, we plan to branch out and expand our clothing to include children, babies, and
+                    gifts.
+                </p>
+            </section>
+        </section>
+
+        <!-- <img id="history-img" src="assets/beginning.jpg"
+            alt="The interior of the Oasis Clothing lobby is made up of smooth canyon walls and has a skylight shining onto a rack of colorful clothing."> -->
+        <section id="history">
+            <picture id="beginning">
+                <!-- <source media="(min-width: 1024px)" srcset="assets/beginning-1.png"> -->
+                <source media="(min-width: 600px)" srcset="assets/beginning-1.png">
+                <source media="(min-width: 320px)" srcset="assets/beginning-2.png">
+                <img src="assets/beginning-2.png"
+                    alt="The interior of the Oasis Clothing lobby is made up of smooth canyon walls and has a skylight shining onto a rack of colorful clothing.">
+            </picture>
+            <h2>The Beginning of Oasis</h2>
+            <p>
+                In 2019, Mikhail Varshavski and Deepika Padukone met at a gala in Scottsdale and bonded over their
+                affinity to experiment with fashion. After talking for hours, they realized the strength of this common
+                interest was too valuable to ignore. And that evening, Oasis was born.
+            </p>
+            <p id="more-history">
+                To learn more, check out the
+                <a href="about.html">About section</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <address id="socials">
+            <a href="https://www.facebook.com" aria-label="Oasis on Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" aria-label="Oasis on Instagram">
+                <i aria-hidden="true" class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" aria-label="Oasis on Twitter">
+                <i aria-hidden="true" class="fab fa-twitter"></i>
+            </a>
+        </address>
+
+        <!-- second nav -->
+        <section id="second-nav-mobile">
+            <h3 class="hide-element">Second Navigation Menu for mobile devices</h3>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html#location">VISIT US</a></li>
+                <li> <a href="mailto:hello@oasisclothing.com">CONTACT US</a></li>
+            </ul>
+        </section>
+
+        <section id="second-nav-tablet">
+            <h3 class="hide-element">Second Navigation Menu for tablet and desktop devices</h3>
+            <ul id="nav-elements">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="about.html#location">VISIT US</a></li>
+                <li> <a href="mailto:hello@oasisclothing.com">CONTACT US</a></li>
+            </ul>
+        </section>
+
+        <article id="disclaimer">
+            <h4>Created by Anay Gupta.</h4>
+            <p>This site is for educational purposes only.</p>
+        </article>
+
+    </footer>
+</body>
+
+</html>
