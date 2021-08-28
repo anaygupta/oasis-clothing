@@ -1,2 +1,4 @@
 # oasis-clothing
-- deployed at [oasisclothing.netlify.app](https://oasisclothing.netlify.app)
+Fully responsive website for high-end local clothing.
+
+Deployed [here](https://oasisclothing.netlify.app).
